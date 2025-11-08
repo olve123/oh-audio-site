@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OH AUDIO | Kommer snart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="coming-soon.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <p class="eyebrow">ohaudio.no</p>
+      <h1>Ny side er på vei.</h1>
+      <p class="lead">
+        Olve Husby bygger en ny digital base for OH AUDIO. I mellomtiden kan du
+        nå meg på
+        <a href="mailto:olve.husby@gmail.com">olve.husby@gmail.com</a>.
+      </p>
+      <div class="pill">
+        <span>Status</span>
+        <strong>Lansering vinter 2025</strong>
+      </div>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> OH AUDIO</p>
+      <a href="mailto:olve.husby@gmail.com">olve.husby@gmail.com</a>
+    </footer>
+
+    <script>
+      const yearEl = document.getElementById("year");
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+      }
+    </script>
+  </body>
+</html>

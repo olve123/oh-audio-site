@@ -1,0 +1,35 @@
+# Work Log
+
+## 2025-11-08
+- Initial setup of OH AUDIO landing page (index.html, styles.css, script.js) with hero, about, services, and contact form sections.
+- Configured minimalist dark theme, basic reveal animations, and mailto-based contact workflow pointing to olve.husby@gmail.com.
+- Provided instructions for replacing logo placeholder, editing content, and serving files locally.
+- Removed references til ungdomsarbeid i hero/om-tekst og oppdaterte tjenestekort til live-lyd for å holde profilen spisset mot teknisk lydarbeid.
+- La inn `assets/logo-placeholder.svg`, byttet hero-komponenten til å bruke eget logo-bilde og oppdaterte CSS slik at du enkelt kan droppe inn ekte logo senere.
+- Byttet placeholder-logoen med faktisk fil `assets/oh-logo.png` og ryddet opp i filnavn/metadata slik at heroen viser korrekt merkevare.
+- Lysnet hero-logo-panelet med en lys gradient, mørk tekstfarge og skygge slik at den mørke logoen popper mot bakgrunnen.
+- Justerte hele fargepaletten til en grafitt-grå profil (variabler + hero-panel) slik at nettsiden matcher hovedfargen i logoen i stedet for å bruke lyse/blå aksenter.
+- Rebalanserte hele fargepaletten til en lys, lufting profil (nye variabler, kort, skjemaer, hero-panel) slik at hele siden nå fremstår lysere uten kritthvite blokker.
+- Endret knappestiler slik at primærknappen bruker hvit tekst med mørk aksentbakgrunn og ghost-knappen arver aksentfargen på teksten.
+- Oppdatert logo-noteteksten i heroen slik at den beskriver grafittgrå logo i stedet for å be om utskifting.
+- La til en semitransparent, fast logo-watermark langs høyre kant så merkevaren følger brukeren nedover siden uten å forstyrre innholdet (skjules på mobil).
+- Byttet watermark-løsningen med en fast vertikal “brand pin” langs venstrekanten som viser logo + tekst uten å dekke innholdet.
+- La til `server.py`, en enkel Python-baser t HTTP-server slik at siden kan serves via `python3 server.py -p 8000`.
+- Flyttet brand-pinnen til øvre venstre hjørne, fjernet teksten og justerte stilen slik at logo-badget ikke kolliderer med annet innhold.
+- La til venstre padding på desktop (via body padding-left) slik at innhold ikke havner under brand-pinnen.
+- Fylte hele brand-pin-boblen med logoen (større sirkel, ingen ekstra padding) for et renere merkeelement.
+- Tonet ned bakgrunnspaletten til myke gråtoner og ga brand-pinnen en diffus grå bakplate for mindre kritthvit uttrykk.
+- Lagt til `assets/hero-pattern.svg` og brukt det som bakgrunn i hero-logo-panelet for å gi dybde bak den store logoen.
+- Justerte hero-bakgrunnen med mørkere gradient + multiply-blend slik at mønsteret trer tydeligere frem bak logoen.
+- Byttet hero-bakgrunnen til et faktisk foto (`assets/foto.jpg`) med mørk overlay for mer levende uttrykk bak logoen.
+- La inn ekstra lysradial + blend i hero-panelet slik at logoen forblir tydelig selv på mørke foto.
+- Utvidet `server.py` og `script.js` med enkel live-reload (HTTP-poll) slik at siden refresher automatisk når filer endres lokalt.
+- Fjernet logo-notetekst under hero-logoen og tilhørende styling når behovet for placeholder-instruks ble borte.
+- Skiftet hele fargepaletten først til dyp mørk blå og nå videre til et grafitt + varme accentfarger som spiller med #1E1E1E-logoen.
+- Satte brand-pin-bakplaten tilbake til hvit for å få mer kontrast mot det mørkeblå temaet.
+- Fjernet hero-variantene og gjorde hovedheroen til en nedtonet “prism”-versjon (lavere opacity på overlays, samme foto i bunn).
+- Oppdaterte hero-overlays og globale accent-farger til varme kobber/amber-toner (#f3a351) som kompletterer #1E1E1E-logoen uten å matche helt.
+- Initierte git-repo, la til `.gitignore`, `CNAME` for ohaudio.no og README med GitHub Pages + DNS-instruksjoner for enkel deploy.
+- Lagt til en minimalistisk “coming soon”-variant (`coming-soon.html` + CSS) som kan publiseres midlertidig mens hovedsiden ferdigstilles.
+- Kopierte coming-soon layout til `index.html`/`styles.css`, fjernet logo-elementet helt slik at placeholderen kun viser tekst og kontaktinfo.
+- Lagret fullversjonen i `site-full/` (egen HTML/CSS) slik at du enkelt kan bytte tilbake fra placeholder når nettsiden er klar.

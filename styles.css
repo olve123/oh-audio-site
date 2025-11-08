@@ -1,0 +1,95 @@
+:root {
+  --bg: #05060b;
+  --card: #0c0e18;
+  --accent: #f3a351;
+  --text: #f5f6fa;
+  --muted: rgba(245, 246, 250, 0.7);
+  font-family: "Space Grotesk", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background: var(--bg);
+  color: var(--text);
+  padding: 2rem;
+  text-align: center;
+}
+
+.shell {
+  max-width: 520px;
+  width: 100%;
+  padding: 2.5rem;
+  background: var(--card);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.45);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-bottom: 0.4rem;
+}
+
+h1 {
+  margin: 0.5rem 0 1rem;
+  font-size: clamp(2rem, 6vw, 2.9rem);
+}
+
+.lead {
+  margin: 0 auto 1.5rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.lead a {
+  color: var(--accent);
+}
+
+.pill {
+  background: rgba(243, 163, 81, 0.08);
+  border: 1px solid rgba(243, 163, 81, 0.4);
+  border-radius: 999px;
+  padding: 0.75rem 1.5rem;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+
+.pill strong {
+  color: var(--accent);
+  letter-spacing: normal;
+  font-size: 0.9rem;
+}
+
+footer {
+  font-size: 0.9rem;
+  color: var(--muted);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+footer a {
+  color: var(--accent);
+}
