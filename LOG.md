@@ -34,3 +34,4 @@
 - Kopierte coming-soon layout til `index.html`/`styles.css`, fjernet logo-elementet helt slik at placeholderen kun viser tekst og kontaktinfo.
 - Lagret fullversjonen i `site-full/` (egen HTML/CSS) slik at du enkelt kan bytte tilbake fra placeholder når nettsiden er klar.
 - Økte typografien på “ohaudio.no”-linjen og oppdaterte status-teksten på placeholderen (nå bare “ohaudio.no” og “Status: Snart” i pillen).
+- Fjernet e-postreferanser fra coming soon-teksten/foteren og la inn en kort “Lansering skjer snart”-melding.
